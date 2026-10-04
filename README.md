@@ -4,9 +4,9 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Phiên bản hiện tại
 
-- **VHWuWa Mobile:** `0.2.0-alpha.13`
+- **VHWuWa Mobile:** `0.2.0-alpha.14`
 - **Wuthering Waves hỗ trợ:** `3.7.0`
-- **Nội dung Việt hóa:** `3.7.0-R4`
+- **Nội dung Việt hóa:** `3.7.0-R5`
 - **Android:** 10 trở lên
 - **Quyền cài đặt:** Shizuku
 - **Kiểu tên:** Tên Anh hoặc Hán Việt
@@ -14,52 +14,49 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Tải xuống
 
-- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.13
-- APK: `VHWuWa-Android-0.2.0-alpha.13-3.7.0-R4.apk`
-- SHA256 APK: `4bbf47622b453cf5cf3a086bbb7f5c0e8d9c9a38e174034425c3d80e8d923004`
+- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.14
+- APK: `VHWuWa-Android-0.2.0-alpha.14-3.7.0-R5.apk`
+- SHA256 APK: `3d050ff5de190819787d7a4adc70eaee2369b460cf4d06e2979251a7fde86570`
 
-## Điểm mới alpha.13 / R4
+## Điểm mới alpha.14 / R5
 
-- Sửa nhóm lỗi **raw localization key** của nội dung 3.7.
-- Gate release bắt buộc **25.278/25.278 identity** tồn tại đúng DB / table / key.
-- Raw key 3.7 sau kiểm tra final: **0**.
-- Đồng bộ cả hai payload **Tên Anh** và **Hán Việt** lên R4.
-- Nhận diện và cài đè an toàn các bản WAHU cũ đã phát hành.
-- Phục hồi/gỡ an toàn trạng thái cài dở khi thiếu PAK nhưng còn mount.
-- Không nhận nhầm `wahu-runtime.txt` của WAHU là mod xung đột.
-- Transaction cài đặt có stage, verify, backup, commit và hậu kiểm.
+- Sửa lỗi **mất text / text trống trên Android** của alpha.13 / R4.
+- Xác định nguyên nhân: R4 đã nhúng nhầm payload PC ~67 MB thay cho payload Android full-base ~110 MB.
+- Khôi phục **112 key mobile-only** bị mất trong `en/lang_multi_text.db`.
+- Khôi phục hai DB Android-only bị thiếu: `db_TotalTopUp.db` và `zh-Hans/lang_multi_text.db`.
+- Giữ nguyên toàn bộ row/key và bản dịch mới đang có trong R4; chỉ union lại phần mobile-specific bị thiếu.
+- Cả Tên Anh và Hán Việt đều dùng payload Android full-base R5.
+- Payload R4 được giữ trong legacy hash set để app nhận diện và nâng cấp trực tiếp.
 
 ## Hướng dẫn cài đặt
 
 1. Cập nhật Wuthering Waves Global lên **3.7.0**.
 2. Mở game một lần và tải xong tài nguyên cần thiết.
 3. Khởi động Shizuku.
-4. Cài hoặc cài đè **VHWuWa Mobile alpha.13**.
+4. Cài hoặc cài đè **VHWuWa Mobile alpha.14**.
 5. Cấp quyền Shizuku khi ứng dụng yêu cầu.
 6. Chọn **Tên Anh** hoặc **Hán Việt**.
 7. Bấm **Cài Việt hóa**.
 8. Mở game; đặt **Text Language = English**.
 
-## Đã kiểm thử
+## Kiểm tra bản alpha.14
 
-Bản alpha.13 đã được smoke-test trên thiết bị **PLK110**:
-
-- nâng cấp trực tiếp từ payload/bản WAHU cũ: đạt;
-- cài sạch và cài đè: đạt;
-- chuyển Tên Anh ↔ Hán Việt: đạt;
-- gỡ và cài lại: đạt;
-- phục hồi/gỡ trạng thái orphan: đạt;
-- cả hai biến thể báo `healthy=true`;
-- game vào `GameActivity`, không có AndroidRuntime / libc fatal trong smoke-test;
-- transaction không để lại file `.wahu-*`.
+- Candidate EN/Hán Việt fresh-unpack: PASS.
+- Mỗi PAK R5 có đủ **114 file**; R4 chỉ có 112 file.
+- Khôi phục đủ **112 row mobile-only** trong `en/lang_multi_text.db`.
+- SQLite `quick_check`: PASS.
+- Core test + Installer test: PASS.
+- Android `assembleDebug`: PASS.
+- APK readback: hai payload nhúng trong APK khớp đúng SHA256 R5.
+- Chưa xác nhận smoke-test hình ảnh cuối trong game trên thiết bị thật cho alpha.14.
 
 PAK Tên Anh SHA256:
 
-`1e647329564fd159c8f94849b84cfe2b2550703e4354093022416c4be951fa28`
+`52e9a717d9edbdb7c8b0558950b16ec4e351289e9d6f70d5cd246d5fded89aee`
 
 PAK Hán Việt SHA256:
 
-`2fb7e68a11c0dd8190887751a93f56aef12fde5316929a786585ea46290820b3`
+`94471d3470fdc091273fd8280bc99c8ad24b0c73ebaf762a72e8ee4013e632f7`
 
 ## Hỗ trợ
 
@@ -71,5 +68,5 @@ PAK Hán Việt SHA256:
 
 - Mã ứng dụng: `vn.wahu.vhwuwa`
 - Mã game: `com.kurogame.wutheringwaves.global`
-- versionCode: `13`
+- versionCode: `14`
 - minSdk: `29`
