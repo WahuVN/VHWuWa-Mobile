@@ -4,9 +4,9 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Phiên bản hiện tại
 
-- **VHWuWa Mobile:** `0.2.0-alpha.14`
+- **VHWuWa Mobile:** `0.2.0-alpha.18` (bản thử nghiệm)
 - **Wuthering Waves hỗ trợ:** `3.7.0`
-- **Nội dung Việt hóa:** `3.7.0-R5`
+- **Nội dung Việt hóa:** `3.7.0-R6`
 - **Android:** 10 trở lên
 - **Quyền cài đặt:** Shizuku
 - **Kiểu tên:** Tên Anh hoặc Hán Việt
@@ -14,11 +14,19 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Tải xuống
 
-- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.14
-- APK: `VHWuWa-Android-0.2.0-alpha.14-3.7.0-R5.apk`
-- SHA256 APK: `3d050ff5de190819787d7a4adc70eaee2369b460cf4d06e2979251a7fde86570`
+- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.18
+- APK: `VHWuWa-Android-0.2.0-alpha.18-3.7.0-R6.apk`
+- SHA256 APK: [Tải checksum của alpha.18](https://github.com/WahuVN/VHWuWa-Mobile/releases/download/v0.2.0-alpha.18/VHWuWa-Android-0.2.0-alpha.18-3.7.0-R6.sha256.txt)
 
-## Điểm mới alpha.14 / R5
+## Điểm mới alpha.18 / R6
+
+- Cập nhật gói thoại Tên Anh và Hán Việt, điều chỉnh xưng hô Qingxiao – Rover theo ngữ cảnh nguồn Trung/Nhật.
+- Giữ quy trình cài qua Shizuku, không chủ động ghi đè PAK gốc của game.
+- Cho phép cài đè từ alpha.14 nhờ giữ nguyên package name và chữ ký.
+
+**Trạng thái QA:** đã build Release, kiểm tra chữ ký và gói dữ liệu trong APK. **Chưa nghiệm thu trong game trên thiết bị thật.** Android lint đầy đủ chưa chạy do Gradle offline thiếu thư viện lint.
+
+### Lịch sử: alpha.14 / R5
 
 - Sửa lỗi **mất text / text trống trên Android** của alpha.13 / R4.
 - Xác định nguyên nhân: R4 đã nhúng nhầm payload PC ~67 MB thay cho payload Android full-base ~110 MB.
@@ -39,7 +47,7 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 7. Bấm **Cài Việt hóa**.
 8. Mở game; đặt **Text Language = English**.
 
-## Kiểm tra bản alpha.14
+## Kiểm tra bản alpha.14 (lịch sử)
 
 - Candidate EN/Hán Việt fresh-unpack: PASS.
 - Mỗi PAK R5 có đủ **114 file**; R4 chỉ có 112 file.
