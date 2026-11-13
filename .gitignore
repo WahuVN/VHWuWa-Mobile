@@ -1,0 +1,4 @@
+﻿# WuWa Android: keep private font transfers, release credentials, and unverified QA APKs on WIN3 only
+/private-local-font-transfer/
+/gh-android-releases-private/
+/release-prep/
