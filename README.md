@@ -4,9 +4,9 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Phiên bản hiện tại
 
-- **VHWuWa Mobile:** `0.2.0-alpha.13`
+- **VHWuWa Mobile:** `0.2.0-alpha.18`
 - **Wuthering Waves hỗ trợ:** `3.7.0`
-- **Nội dung Việt hóa:** `3.7.0-R4`
+- **Nội dung Việt hóa:** `3.7.0-R6`
 - **Android:** 10 trở lên
 - **Quyền cài đặt:** Shizuku
 - **Kiểu tên:** Tên Anh hoặc Hán Việt
@@ -14,11 +14,11 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 
 ## Tải xuống
 
-- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.13
-- APK: `VHWuWa-Android-0.2.0-alpha.13-3.7.0-R4.apk`
-- SHA256 APK: `4bbf47622b453cf5cf3a086bbb7f5c0e8d9c9a38e174034425c3d80e8d923004`
+- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.18
+- APK: `VHWuWa-Android-0.2.0-alpha.18-3.7.0-R6.apk`
+- SHA256 APK: `c5115cd5edc029fa15fb171a0a08ebb85baab494412ac7247427c7f9f445ea12`
 
-## Điểm mới alpha.13 / R4
+## Cải tiến nền tảng từ alpha.13 / R4
 
 - Sửa nhóm lỗi **raw localization key** của nội dung 3.7.
 - Gate release bắt buộc **25.278/25.278 identity** tồn tại đúng DB / table / key.
@@ -34,7 +34,7 @@ Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
 1. Cập nhật Wuthering Waves Global lên **3.7.0**.
 2. Mở game một lần và tải xong tài nguyên cần thiết.
 3. Khởi động Shizuku.
-4. Cài hoặc cài đè **VHWuWa Mobile alpha.13**.
+4. Cài hoặc cài đè **VHWuWa Mobile alpha.18**.
 5. Cấp quyền Shizuku khi ứng dụng yêu cầu.
 6. Chọn **Tên Anh** hoặc **Hán Việt**.
 7. Bấm **Cài Việt hóa**.
@@ -71,5 +71,5 @@ PAK Hán Việt SHA256:
 
 - Mã ứng dụng: `vn.wahu.vhwuwa`
 - Mã game: `com.kurogame.wutheringwaves.global`
-- versionCode: `13`
+- versionCode: xem phiên bản APK trong bản phát hành tương ứng
 - minSdk: `29`
