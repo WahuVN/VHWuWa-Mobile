@@ -1,75 +1,36 @@
-# VHWuWa Mobile
+# WuWa Việt Hóa Android
 
-Bản Việt hóa **Wuthering Waves trên Android** do WAHU phát hành.
+Công cụ Việt hóa Wuthering Waves cho Android, cài bằng Shizuku và Mount riêng, không ghi đè PAK gốc.
 
 ## Phiên bản hiện tại
 
-- **VHWuWa Mobile:** `0.2.0-alpha.18`
-- **Wuthering Waves hỗ trợ:** `3.7.0`
-- **Nội dung Việt hóa:** `3.7.0-R6`
-- **Android:** 10 trở lên
-- **Quyền cài đặt:** Shizuku
-- **Kiểu tên:** Tên Anh hoặc Hán Việt
-- **Cách cài:** gắn gói riêng, không ghi đè PAK gốc của game
+- **Ứng dụng:** `0.2.0-alpha.24` — bản thử nghiệm
+- **Game:** Wuthering Waves `3.8.1`
+- **Bản dịch:** Tên Anh `3.8.10-R28`
+- **Android:** 10 trở lên; cần Shizuku
+- **Mã ứng dụng:** `vn.wahu.vhwuwa`
 
-## Tải xuống
+## Tải xuống và cập nhật
 
-- Release: https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.18
-- APK: `VHWuWa-Android-0.2.0-alpha.18-3.7.0-R6.apk`
-- SHA256 APK: `c5115cd5edc029fa15fb171a0a08ebb85baab494412ac7247427c7f9f445ea12`
+**[Tải Android alpha.24 trên GitHub Releases](https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.24)**
 
-## Cải tiến nền tảng từ alpha.13 / R4
+Người đã dùng alpha.18 có thể tải APK alpha.24 và cài đè; hai phiên bản có cùng chữ ký APK. Không cần gỡ ứng dụng hoặc xóa dữ liệu. Trong game chọn **Text Language = English**.
 
-- Sửa nhóm lỗi **raw localization key** của nội dung 3.7.
-- Gate release bắt buộc **25.278/25.278 identity** tồn tại đúng DB / table / key.
-- Raw key 3.7 sau kiểm tra final: **0**.
-- Đồng bộ cả hai payload **Tên Anh** và **Hán Việt** lên R4.
-- Nhận diện và cài đè an toàn các bản WAHU cũ đã phát hành.
-- Phục hồi/gỡ an toàn trạng thái cài dở khi thiếu PAK nhưng còn mount.
-- Không nhận nhầm `wahu-runtime.txt` của WAHU là mod xung đột.
-- Transaction cài đặt có stage, verify, backup, commit và hậu kiểm.
+1. Cập nhật game và tải xong tài nguyên.
+2. Bật Shizuku, cấp quyền cho ứng dụng.
+3. Đóng game, chọn **Tên Anh**, bấm **Cài Việt hóa**.
+4. Mở game và chọn tiếng Anh trong mục ngôn ngữ văn bản.
 
-## Hướng dẫn cài đặt
+### Các giới hạn đang xử lý
 
-1. Cập nhật Wuthering Waves Global lên **3.7.0**.
-2. Mở game một lần và tải xong tài nguyên cần thiết.
-3. Khởi động Shizuku.
-4. Cài hoặc cài đè **VHWuWa Mobile alpha.18**.
-5. Cấp quyền Shizuku khi ứng dụng yêu cầu.
-6. Chọn **Tên Anh** hoặc **Hán Việt**.
-7. Bấm **Cài Việt hóa**.
-8. Mở game; đặt **Text Language = English**.
-
-## Đã kiểm thử
-
-Bản alpha.13 đã được smoke-test trên thiết bị **PLK110**:
-
-- nâng cấp trực tiếp từ payload/bản WAHU cũ: đạt;
-- cài sạch và cài đè: đạt;
-- chuyển Tên Anh ↔ Hán Việt: đạt;
-- gỡ và cài lại: đạt;
-- phục hồi/gỡ trạng thái orphan: đạt;
-- cả hai biến thể báo `healthy=true`;
-- game vào `GameActivity`, không có AndroidRuntime / libc fatal trong smoke-test;
-- transaction không để lại file `.wahu-*`.
-
-PAK Tên Anh SHA256:
-
-`1e647329564fd159c8f94849b84cfe2b2550703e4354093022416c4be951fa28`
-
-PAK Hán Việt SHA256:
-
-`2fb7e68a11c0dd8190887751a93f56aef12fde5316929a786585ea46290820b3`
+- **Hán Việt chưa được cập nhật cho 3.8**. Bản APK vẫn có dữ liệu Hán Việt cũ; chưa chọn Hán Việt ở phiên bản này.
+- **Cập nhật tự động trên Android từ alpha.18 chưa hoạt động qua kênh công khai**: ứng dụng cũ đang tra một GitHub repository riêng tư. Hãy cài đè APK theo liên kết ở trên.
+- Bản alpha.24 đã được thử với game 3.8.1 trên OnePlus thực tế, chưa nghiệm thu hết nhiệm vụ và font ở mọi cảnh.
+- APK được ký bằng chứng thư Android Debug đang được dùng ở alpha.18, chưa có hệ thống ký phát hành riêng.
 
 ## Hỗ trợ
 
-- Discord Wuthering Waves VN: https://discord.gg/Gy5YQ84Yc2
+- Discord: https://discord.gg/Gy5YQ84Yc2
 - Bản PC: https://github.com/WahuVN/Viet-Hoa-WuWa
-- Báo lỗi / góp ý: dùng `/bao-loi` hoặc `/gop-y` trên Discord
 
-## Thông tin kỹ thuật
-
-- Mã ứng dụng: `vn.wahu.vhwuwa`
-- Mã game: `com.kurogame.wutheringwaves.global`
-- versionCode: xem phiên bản APK trong bản phát hành tương ứng
-- minSdk: `29`
+Chi tiết bản phát hành: [Release notes alpha.24](RELEASE_NOTES_alpha24.md).
