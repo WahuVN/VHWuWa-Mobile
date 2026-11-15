@@ -1,17 +1,13 @@
 # WuWa Việt Hóa Android v0.2.0-alpha.24 — Wuthering Waves 3.8.1
 
-Bản thử nghiệm Android cập nhật **Việt hóa Tên Anh R28** cho Wuthering Waves 3.8.1.
+- Cập nhật bản Việt hóa **Tên Anh R28** cho Wuthering Waves 3.8.1.
+- Điều chỉnh một số tên sự kiện, giao diện và hiển thị tiếng Việt.
+- Cải thiện trải nghiệm cài Việt hóa qua Shizuku.
 
-- Cập nhật nội dung Việt hóa, một số tên sự kiện và giao diện.
-- Giữ cách cài qua Shizuku, dùng Mount riêng và không ghi đè PAK gốc.
-- Giữ giao diện, tùy chỉnh font và dữ liệu app khi cài đè bằng APK cùng chữ ký.
+**Cập nhật:** Tải APK bên dưới và **cài đè bản cũ**, không cần gỡ ứng dụng. Bật Shizuku, đóng game rồi chọn **Tên Anh → Cài Việt hóa**. Trong game đặt **Text Language: English**.
 
-**Cập nhật:** Tải APK bên dưới và **cài đè**, không cần gỡ bản cũ. Mở Shizuku, đóng game rồi chọn **Tên Anh → Cài Việt hóa**. Trong game đặt *Text Language: English*.
+Bản alpha này sử dụng **Tên Anh R28**; dữ liệu Hán Việt 3.8 chưa cập nhật.
 
-**Lưu ý của bản alpha:** Hán Việt chưa có dữ liệu 3.8 mới, vui lòng **không chọn Hán Việt**. Tự kiểm tra cập nhật trong những bản Android cũ chưa hoạt động qua GitHub công khai, vì còn trỏ tới repository riêng tư; đợt này tải APK và cài đè thủ công.
+**Yêu cầu:** Android 10+ và Shizuku đang hoạt động.
 
-**Kiểm thử:** OnePlus 15 / Android 16, game 3.8.1, Shizuku và bản dịch Tên Anh R28 đã hiển thị tiếng Việt trong game. Chưa kiểm hết toàn bộ nhiệm vụ/hội thoại.
-
-**Yêu cầu:** Android 10+, Shizuku đang hoạt động.
-
-Hỗ trợ: https://discord.gg/Gy5YQ84Yc2
+**Hỗ trợ:** https://discord.gg/Gy5YQ84Yc2
