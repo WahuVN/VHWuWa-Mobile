@@ -24,7 +24,7 @@
 3. Đóng game, chọn **Tên Anh → Cài Việt hóa**.
 4. Mở game, đặt **Text Language = English** để hiện bản dịch.
 
-Có thể **cài đè APK** từ bản alpha cũ cùng chữ ký; không cần gỡ ứng dụng hoặc xóa dữ liệu. Nếu nút tự cập nhật chưa hoạt động, hãy tải APK trực tiếp trên GitHub.
+Có thể **cài đè APK** từ bản alpha cũ cùng chữ ký; không cần gỡ ứng dụng hoặc xóa dữ liệu. Nếu đang dùng bản alpha cũ không tự cập nhật được, hãy tải APK mới trên GitHub và cài đè.
 
 **Lưu ý:** Bản Hán Việt chưa có dữ liệu mới cho game 3.8. Đây là bản alpha, một số hội thoại hoặc font có thể vẫn cần điều chỉnh. Bản Android **khác phiên bản** với ứng dụng PC.
 

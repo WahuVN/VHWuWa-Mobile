@@ -4,7 +4,7 @@
 
 | Phiên bản | Thay đổi chính |
 | --- | --- |
-| [alpha.29](alpha.29.md) | Cập nhật ứng dụng và cải thiện tương thích Android |
+| [alpha.29](alpha.29.md) | Cải thiện ứng dụng và sửa cập nhật từ GitHub công khai |
 | [alpha.24](alpha.24.md) | Cập nhật Tên Anh R28 cho Wuthering Waves 3.8.1 |
 | [alpha.18](alpha.18.md) | Nội dung 3.7 R6 |
 | [alpha.14](alpha.14.md) | Sửa lỗi thiếu chữ ở R4 |

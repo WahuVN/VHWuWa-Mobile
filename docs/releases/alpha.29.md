@@ -1,6 +1,7 @@
 **WuWa Việt Hóa Android v0.2.0-alpha.29 — Wuthering Waves 3.8.1.**
 
 - Cải thiện ứng dụng cài Việt hóa Android và thao tác với Shizuku.
+- Sửa kiểm tra cập nhật để lấy bản mới từ GitHub Mobile công khai, có xác minh tệp tải.
 - Điều chỉnh khả năng tương thích, font và xử lý tệp bản dịch.
 - Giữ **bản dịch Tên Anh R28 (dữ liệu 3.8.10)**; chưa cập nhật nội dung dịch sang R29.
 
