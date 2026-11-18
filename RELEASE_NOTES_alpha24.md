@@ -15,3 +15,5 @@ Bản thử nghiệm Android cập nhật **Việt hóa Tên Anh R28** cho Wuthe
 **Yêu cầu:** Android 10+, Shizuku đang hoạt động.
 
 Hỗ trợ: https://discord.gg/Gy5YQ84Yc2
+
+**Lưu ý kỹ thuật:** APK alpha.24 là bản hiện hành công khai; các điều chỉnh dò file .sig cho nhiều gói ngôn ngữ đang ở nhánh chuẩn bị, chưa có trong APK này. Chữ ký APK cần giữ tương thích với bản alpha cũ để có thể cài đè. Không bỏ xác minh toàn vẹn PAK hoặc tự tạo chữ ký game.

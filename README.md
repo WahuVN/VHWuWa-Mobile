@@ -21,6 +21,13 @@ Người đã dùng alpha.18 có thể tải APK alpha.24 và cài đè; hai phi
 3. Đóng game, chọn **Tên Anh**, bấm **Cài Việt hóa**.
 4. Mở game và chọn tiếng Anh trong mục ngôn ngữ văn bản.
 
+### Các phiên bản và chữ ký
+
+- **Phiên bản ứng dụng, phiên bản game và phiên bản resource là ba giá trị độc lập.** Không yêu cầu chúng bằng nhau; cần phát hiện đúng thư mục resource thực tế và chỉ cài gói bản dịch tương thích.
+- **Chữ ký APK Android** dùng để xác thực ứng dụng khi cài mới/cài đè. Android bắt buộc APK được ký, và cập nhật tại chỗ cần cùng chứng chỉ với bản trước. Bản alpha.24 hiện vẫn dùng chứng chỉ alpha/debug cũ.
+- **File .sig của game** là dữ liệu đi kèm PAK/Mount, không phải chữ ký APK. Bản hiện hành chỉ cài khi tìm thấy SIG gốc của game; không tạo SIG giả. Việc hỗ trợ thêm các thư mục ngôn ngữ khi không có Lang_en được xử lý trong mã nguồn chuẩn bị và chưa nằm trong APK alpha.24 công khai.
+- Không tắt kiểm tra SHA-256 tải xuống, danh tính gói hoặc ownership tệp WAHU để xử lý lỗi dò SIG.
+
 ### Các giới hạn đang xử lý
 
 - **Hán Việt chưa được cập nhật cho 3.8**. Bản APK vẫn có dữ liệu Hán Việt cũ; chưa chọn Hán Việt ở phiên bản này.
