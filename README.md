@@ -1,43 +1,35 @@
-# WuWa Việt Hóa Android
+<div align="center">
 
-Công cụ Việt hóa Wuthering Waves cho Android, cài bằng Shizuku và Mount riêng, không ghi đè PAK gốc.
+# Việt hóa Wuthering Waves (WuWa) cho Android
 
-## Phiên bản hiện tại
+**VHWuWa Mobile** giúp cài bản dịch tiếng Việt cho Wuthering Waves trên điện thoại Android bằng **Shizuku**, hạn chế thay đổi tệp game gốc.
 
-- **Ứng dụng:** `0.2.0-alpha.24` — bản thử nghiệm
-- **Game:** Wuthering Waves `3.8.1`
-- **Bản dịch:** Tên Anh `3.8.10-R28`
-- **Android:** 10 trở lên; cần Shizuku
-- **Mã ứng dụng:** `vn.wahu.vhwuwa`
+**[Tải APK Android v0.2.0-alpha.29](https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.29)** · [Bản PC](https://github.com/WahuVN/Viet-Hoa-WuWa/releases/latest) · [Discord hỗ trợ](https://discord.gg/Gy5YQ84Yc2)
 
-## Tải xuống và cập nhật
+</div>
 
-**[Tải Android alpha.24 trên GitHub Releases](https://github.com/WahuVN/VHWuWa-Mobile/releases/tag/v0.2.0-alpha.24)**
+## Phiên bản hỗ trợ
 
-Người đã dùng alpha.18 có thể tải APK alpha.24 và cài đè; hai phiên bản có cùng chữ ký APK. Không cần gỡ ứng dụng hoặc xóa dữ liệu. Trong game chọn **Text Language = English**.
+| Nội dung | Phiên bản |
+| --- | --- |
+| Ứng dụng Android | **0.2.0-alpha.29** (bản thử nghiệm) |
+| Game | **Wuthering Waves 3.8.1** |
+| Bản dịch | **Tên Anh R28** (dữ liệu 3.8.10) |
+| Thiết bị | Android **10 trở lên**, cần **Shizuku** |
 
-1. Cập nhật game và tải xong tài nguyên.
-2. Bật Shizuku, cấp quyền cho ứng dụng.
-3. Đóng game, chọn **Tên Anh**, bấm **Cài Việt hóa**.
-4. Mở game và chọn tiếng Anh trong mục ngôn ngữ văn bản.
+## Cách cài Việt hóa
 
-### Các phiên bản và chữ ký
+1. Cập nhật Wuthering Waves và tải xong tài nguyên của game.
+2. Tải APK từ mục **Releases**, cài ứng dụng và bật **Shizuku**.
+3. Đóng game, chọn **Tên Anh → Cài Việt hóa**.
+4. Mở game, đặt **Text Language = English** để hiện bản dịch.
 
-- **Phiên bản ứng dụng, phiên bản game và phiên bản resource là ba giá trị độc lập.** Không yêu cầu chúng bằng nhau; cần phát hiện đúng thư mục resource thực tế và chỉ cài gói bản dịch tương thích.
-- **Chữ ký APK Android** dùng để xác thực ứng dụng khi cài mới/cài đè. Android bắt buộc APK được ký, và cập nhật tại chỗ cần cùng chứng chỉ với bản trước. Bản alpha.24 hiện vẫn dùng chứng chỉ alpha/debug cũ.
-- **File .sig của game** là dữ liệu đi kèm PAK/Mount, không phải chữ ký APK. Bản hiện hành chỉ cài khi tìm thấy SIG gốc của game; không tạo SIG giả. Việc hỗ trợ thêm các thư mục ngôn ngữ khi không có Lang_en được xử lý trong mã nguồn chuẩn bị và chưa nằm trong APK alpha.24 công khai.
-- Không tắt kiểm tra SHA-256 tải xuống, danh tính gói hoặc ownership tệp WAHU để xử lý lỗi dò SIG.
+Có thể **cài đè APK** từ bản alpha cũ cùng chữ ký; không cần gỡ ứng dụng hoặc xóa dữ liệu. Nếu nút tự cập nhật chưa hoạt động, hãy tải APK trực tiếp trên GitHub.
 
-### Các giới hạn đang xử lý
-
-- **Hán Việt chưa được cập nhật cho 3.8**. Bản APK vẫn có dữ liệu Hán Việt cũ; chưa chọn Hán Việt ở phiên bản này.
-- **Cập nhật tự động trên Android từ alpha.18 chưa hoạt động qua kênh công khai**: ứng dụng cũ đang tra một GitHub repository riêng tư. Hãy cài đè APK theo liên kết ở trên.
-- Bản alpha.24 đã được thử với game 3.8.1 trên OnePlus thực tế, chưa nghiệm thu hết nhiệm vụ và font ở mọi cảnh.
-- APK được ký bằng chứng thư Android Debug đang được dùng ở alpha.18, chưa có hệ thống ký phát hành riêng.
+**Lưu ý:** Bản Hán Việt chưa có dữ liệu mới cho game 3.8. Đây là bản alpha, một số hội thoại hoặc font có thể vẫn cần điều chỉnh. Bản Android **khác phiên bản** với ứng dụng PC.
 
 ## Hỗ trợ
 
-- Discord: https://discord.gg/Gy5YQ84Yc2
-- Bản PC: https://github.com/WahuVN/Viet-Hoa-WuWa
+[Báo lỗi](https://github.com/WahuVN/VHWuWa-Mobile/issues) · [Lịch sử cập nhật](docs/releases/README.md) · [Discord](https://discord.gg/Gy5YQ84Yc2) · [Việt hóa PC](https://github.com/WahuVN/Viet-Hoa-WuWa)
 
-Chi tiết bản phát hành: [Release notes alpha.24](RELEASE_NOTES_alpha24.md).
+*Công cụ Việt hóa do cộng đồng thực hiện, không thuộc nhà phát hành Wuthering Waves.*
